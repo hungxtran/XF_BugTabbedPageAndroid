@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedDemo.Android", "TabbedDemo.Android\TabbedDemo.Android.csproj", "{893373A7-BE6D-4F41-9322-AEE31093E27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedDemo", "TabbedDemo\TabbedDemo.csproj", "{BEE55F59-F444-459E-B5D5-4C02C3F9B84A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893373A7-BE6D-4F41-9322-AEE31093E27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893373A7-BE6D-4F41-9322-AEE31093E27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893373A7-BE6D-4F41-9322-AEE31093E27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893373A7-BE6D-4F41-9322-AEE31093E27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE55F59-F444-459E-B5D5-4C02C3F9B84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE55F59-F444-459E-B5D5-4C02C3F9B84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE55F59-F444-459E-B5D5-4C02C3F9B84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE55F59-F444-459E-B5D5-4C02C3F9B84A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
