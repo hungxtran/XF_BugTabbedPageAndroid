@@ -1,5 +1,6 @@
 ﻿using System;
-
+using Prism;
+using Prism.Ioc;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -21,13 +22,22 @@ namespace TabbedDemo.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+
+            LoadApplication(new App(new AndroidInitializer()));
         }
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        public class AndroidInitializer : IPlatformInitializer
+        {
+            public void RegisterTypes(IContainerRegistry containerRegistry)
+            {
+            }
         }
     }
 }
