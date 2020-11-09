@@ -2,9 +2,9 @@
 
 namespace TabbedDemo.Views
 {
-    public partial class LoginPage : ContentPage
+    public partial class BlankPage : ContentPage
     {
-        public LoginPage()
+        public BlankPage()
         {
             InitializeComponent();
         }

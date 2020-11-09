@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<renderers:BottomTabbed
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:renderers="clr-namespace:TabbedDemo.Renderers"
+    xmlns:views="clr-namespace:TabbedDemo.Views"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="TabbedDemo.Views.MainPage">
+    <views:BlankPage
+        Title="Page 1"
+        IconImageSource="ic_coffee" />
+    <views:BlankPage
+        Title="Page 2"
+        IconImageSource="ic_flower" />
+    <views:BlankPage
+        Title="Page 3"
+        IconImageSource="ic_heart" />
+    <views:BlankPage
+        Title="Page 4"
+        IconImageSource="ic_images" />
+    <views:BlankPage
+        Title="Page 5"
+        IconImageSource="ic_smoke" />
+</renderers:BottomTabbed>

@@ -7,6 +7,7 @@ using TabbedDemo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace TabbedDemo
 {
     public partial class App : PrismApplication
@@ -25,6 +26,7 @@ namespace TabbedDemo
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
         }
 
         protected override void OnStart()

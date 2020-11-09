@@ -18,6 +18,7 @@
             BackgroundColor="GreenYellow"
             TextColor="Goldenrod"
             FontSize="Title"
-            Text="LOGIN"/>
+            Text="LOGIN"
+            Command="{Binding LoginCommand}"/>
     </StackLayout>
 </ContentPage>
