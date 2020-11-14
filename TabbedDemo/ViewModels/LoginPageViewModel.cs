@@ -6,16 +6,13 @@ using TabbedDemo.Views;
 
 namespace TabbedDemo.ViewModels
 {
-    public class LoginPageViewModel
+    public class LoginPageViewModel : ViewModelBase
     {
-        INavigationService _navigationService;
-        public LoginPageViewModel(INavigationService navigationService)
+        public LoginPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            _navigationService = navigationService;
         }
 
         private DelegateCommand _loginCommand;
-
         public DelegateCommand LoginCommand => _loginCommand ?? (_loginCommand = new DelegateCommand(async () => await LoginCommandExecute()));
 
         private async Task LoginCommandExecute()

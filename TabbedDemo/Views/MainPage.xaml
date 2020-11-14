@@ -7,19 +7,19 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="TabbedDemo.Views.MainPage">
-    <views:BlankPage
-        Title="Page 1"
+    <views:CoffeePage
+        Title="Coffee"
         IconImageSource="ic_coffee" />
-    <views:BlankPage
-        Title="Page 2"
+    <views:FlowerPage
+        Title="Flower"
         IconImageSource="ic_flower" />
-    <views:BlankPage
-        Title="Page 3"
+    <views:HeartPage
+        Title="Heart"
         IconImageSource="ic_heart" />
-    <views:BlankPage
-        Title="Page 4"
+    <views:ImagesPage
+        Title="Image"
         IconImageSource="ic_images" />
-    <views:BlankPage
-        Title="Page 5"
+    <views:SmokePage
+        Title="Smoke"
         IconImageSource="ic_smoke" />
 </renderers:BottomTabbed>

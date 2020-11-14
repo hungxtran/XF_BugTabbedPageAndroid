@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    IsEnabled="{Binding IsEnabledContentPage}"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="TabbedDemo.Views.CoffeePage">
+    <StackLayout>
+        <Frame
+            BackgroundColor="#2196F3"
+            Padding="24"
+            CornerRadius="0">
+            <Label
+                Text="Welcome to Xamarin.Forms!"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="36" />
+        </Frame>
+        <Label
+            Text="Start developing now"
+            FontSize="Title"
+            Padding="30,10,30,10" />
+        <Label
+            Text="This is just a demo button to show the content page has been enabled after back from tutorial."
+            FontSize="16"
+            Padding="30,0,30,0" />
+        <Button
+            BackgroundColor="#2196F3"
+            TextColor="White"
+            Text="LOG OUT"
+            FontSize="Large"
+            WidthRequest="150"
+            HeightRequest="80"
+            CornerRadius="10"
+            HorizontalOptions="CenterAndExpand"
+            Command="{Binding LogoutCommand}"/>
+        <Label
+            FontSize="16"
+            Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span
+                            Text="Learn more at " />
+                        <Span
+                            Text="https://aka.ms/xamarin-quickstart"
+                            FontAttributes="Bold" />
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Frame
+            BackgroundColor="RosyBrown"
+            VerticalOptions="FillAndExpand"
+            Padding="0"
+            CornerRadius="0">
+            <Image
+                Source="ic_coffee"
+                WidthRequest="150"
+                HeightRequest="150"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>

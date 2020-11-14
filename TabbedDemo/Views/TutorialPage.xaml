@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    x:Class="TabbedDemo.Views.TutorialPage">
+    <StackLayout
+        x:Name="tutorialPopup"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer
+                Command="{Binding CloseTutorialCommand}"/>
+        </StackLayout.GestureRecognizers>
+        <Image
+            Source="ic_bulb_tip"
+            WidthRequest="150"
+            HeightRequest="150"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+</pages:PopupPage>

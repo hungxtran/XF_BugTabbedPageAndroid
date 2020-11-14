@@ -27,6 +27,8 @@ namespace TabbedDemo
         {
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<TutorialPage, TutorialPageViewModel>();
+            containerRegistry.RegisterForNavigation<CoffeePage, CoffeePageViewModel>();
         }
 
         protected override void OnStart()
