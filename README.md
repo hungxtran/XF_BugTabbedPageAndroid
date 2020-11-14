@@ -29,12 +29,12 @@ _**2. Bug Content:**_
      - Tap button **LOGIN** on the initial screen.
      - After logged in, the app displays a tutorial (tips on startup) as a popup.
      - Tap on the tutorial and the popup closed.
-     - Switch to tab: Page 2, Page 3, Page 4 or Page 5.
-     - Try switch back to tab: Page 1.
+     - Switch to tab: Flower, Heart, Image or Smoke.
+     - Try switch back to tab: Coffee.
    - Actual Result:
-     - Can't select tab Page 1 and the icon is greyed out, suggesting this tab is disabled.
+     - Can't select tab Coffee and the icon is greyed out, suggesting this tab is disabled.
    - Expected Result:
-     - Can switch to tab Page 1 normally on the first time installation of the app.
+     - Can switch to tab Coffee normally.
  
  _**3. Work around:**_
    - Initialize the disabled tab (or all tabs in case we need to make sure no tab is accidentally disabled). See following code:
